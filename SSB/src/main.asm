@@ -3,7 +3,7 @@ bits 16
 
 jmp start 
 
-%include "func.asm"
+%include "drivers.asm"
 %include "config.asm":"
 
 start:
