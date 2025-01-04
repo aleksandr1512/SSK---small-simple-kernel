@@ -1,6 +1,6 @@
-starting_text: db "Kernel is starting...", 0x0d, 0xa, 0
-shutdown_text: db "Kernel is shutdown...", 0x0d, 0xa, 0
-help_text: db "it`s a small simple kernel or SSK", 0
+starting_text: db "Bootloader is starting...", 0x0d, 0xa, 0
+shutdown_text: db "Bootloader is shutdown...", 0x0d, 0xa, 0
+help_text: db "it`s a small simple boot or SSB", 0
 wrong_text: db "Wrong command!", 0
 prompt: db  ">", 0
 new_line: db 0x0d, 0xa, 0
