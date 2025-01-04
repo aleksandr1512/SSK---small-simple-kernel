@@ -4,7 +4,7 @@ bits 16
 jmp start 
 
 %include "drivers.asm"
-%include "config.asm":"
+%include "config.asm"
 
 start:
 	mov ah, 0x00        
