@@ -21,18 +21,6 @@ always:
 
 	cmp cx,1
 	je equal_help
-	
-	mov ax, call1_command           
-	call check_the_input  
-
-	cmp cx, 1
-	je call1  
-
-	mov ax, test_input_command
-	call check_the_input
-
-	cmp cx, 1
-	je test_input
 
 	jmp equal_to_nothing
 	
