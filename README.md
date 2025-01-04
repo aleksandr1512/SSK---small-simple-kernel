@@ -8,7 +8,7 @@
 
 Команда запуска ядра через qemu:
 ```bash
-qemu-system-i386 kernel.bin -monitor stdio
+qemu-system-i386 boot.bin -monitor stdio
 ```
 Но функцианал выходит давольно слабым,
 Я предлагаю скачать исходники из папки `src`, самому добавить свои макросы для выполнения,
