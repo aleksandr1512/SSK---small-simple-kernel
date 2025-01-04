@@ -10,21 +10,21 @@ help_command: db "help", 0
 
 on_start:
 
-	mov si, starting_text   
-	call print 
+    mov si, starting_text   
+    call print 
 
-	ret
+    ret
 always:
 
-	mov ax,help_command
-	call check_the_input
+    mov ax,help_command
+    call check_the_input
 
-	cmp cx,1
-	je equal_help
+    cmp cx,1
+    je equal_help
 
-	jmp equal_to_nothing
-	
-	ret
+    jmp equal_to_nothing
+
+    ret
 
 equal_help:
     mov si, help_text
@@ -33,6 +33,6 @@ equal_help:
     jmp done
 
 equal_to_nothing:
-	mov si, wrong_text
-	call print
+    mov si, wrong_text
+    call print
     jmp done
